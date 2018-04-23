@@ -19,7 +19,7 @@ h2 {
 }
 p {
     font-family: 'Raleway', sans-serif;
-    color: yellow;
+    color:green;
     font-size: 20pt;
 }
 .btn {
@@ -30,4 +30,12 @@ body {
 }
 .jumbotron {
     opacity: .60;
+}
+#directions {
+    margin-bottom: 20px;
+}
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
 }

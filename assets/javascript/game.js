@@ -14,6 +14,7 @@ $(document).ready(function () {
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
+    var score = 0;
 
     $("#numberWins").text(wins);
     $("#numberLosses").text(losses);
