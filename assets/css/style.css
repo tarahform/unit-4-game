@@ -19,9 +19,15 @@ h2 {
 }
 p {
     font-family: 'Raleway', sans-serif;
-    color: rgb(201, 152, 30);
+    color: yellow;
     font-size: 15pt;
 }
 .btn {
     background-color: Transparent;
+}
+body {
+    background-image: url("../images/crystall-grey.jpg");
+}
+.jumbotron {
+    opacity: .60;
 }
