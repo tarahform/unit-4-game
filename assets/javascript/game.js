@@ -4,11 +4,12 @@ $(document).ready(function () {
 
     $("#numberToGet").text(random);
 
-    var crystalValues = {}
-    crystalValues[1] = Math.floor(Math.random() * 12 + 1);
-    crystalValues[2] = Math.floor(Math.random() * 12 + 1);
-    crystalValues[3] = Math.floor(Math.random() * 12 + 1);
-    crystalValues[4] = Math.floor(Math.random() * 12 + 1);
+    var crystalValues = [
+        Math.floor(Math.random() * 12 + 1),
+        Math.floor(Math.random() * 12 + 1),
+        Math.floor(Math.random() * 12 + 1),
+        Math.floor(Math.random() * 12 + 1)
+    ];
 
     var userTotal = 0;
     var wins = 0;
@@ -19,12 +20,11 @@ $(document).ready(function () {
 
     function reset() {
         random = Math.floor(Math.random() * 102 + 19);
-        console.log(random);
         $("#numberToGet").text(random);
+        crystalValues[0] = Math.floor(Math.random() * 12 + 1);
         crystalValues[1] = Math.floor(Math.random() * 12 + 1);
         crystalValues[2] = Math.floor(Math.random() * 12 + 1);
         crystalValues[3] = Math.floor(Math.random() * 12 + 1);
-        crystalValues[4] = Math.floor(Math.random() * 12 + 1);
         userTotal = 0;
         $("#score").text(userTotal);
     };
@@ -43,8 +43,8 @@ $(document).ready(function () {
         reset();
     };
 
-    $("#peridot", "#sapphire", "#ruby", "#topaz").on("click", function () {
-        userTotal = userTotal + ("#peridot", "#sapphire", "#ruby", "#topaz");
+    $("#peridot").on("click", function () {
+        userTotal = userTotal + crystalValues[0];
         $("#score").text(userTotal);
 
         if (userTotal === random) {
@@ -55,6 +55,46 @@ $(document).ready(function () {
             loser()
         }
     });
+
+    $("#ruby").on("click", function () {
+        userTotal = userTotal + crystalValues[1];
+        $("#score").text(userTotal);
+
+        if (userTotal === random) {
+            winner()
+        }
+
+        else if (userTotal > random) {
+            loser()
+        }
+    });
+
+    $("#sapphire").on("click", function () {
+        userTotal = userTotal + crystalValues[2];
+        $("#score").text(userTotal);
+
+        if (userTotal === random) {
+            winner()
+        }
+
+        else if (userTotal > random) {
+            loser()
+        }
+    });
+
+    $("#topaz").on("click", function () {
+        userTotal = userTotal + crystalValues[2];
+        $("#score").text(userTotal);
+
+        if (userTotal === random) {
+            winner()
+        }
+
+        else if (userTotal > random) {
+            loser()
+        }
+    });
+
 
     function getCrystalHandler(crystalKey) {
         return function () {
@@ -73,8 +113,3 @@ $(document).ready(function () {
 
     }
 });
-
-$("#peridot").on("click", getCrystalHandler(1));
-$("#ruby").on("click", getCrystalHandler(2));
-$("#sapphire").on("click", getCrystalHandler(3));
-$("#topaz").on("click", getCrystalHandler(4));

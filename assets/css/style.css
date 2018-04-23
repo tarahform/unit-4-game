@@ -9,14 +9,19 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: red;
-    font-size: 50pt;
+    font-size: 60pt;
 }
 h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: blue;
+    font-size: 35pt;
 }
 p {
     font-family: 'Raleway', sans-serif;
     color: rgb(201, 152, 30);
+    font-size: 15pt;
+}
+.btn {
+    background-color: Transparent;
 }
