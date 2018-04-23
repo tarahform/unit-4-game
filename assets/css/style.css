@@ -1,0 +1,22 @@
+#crystalscol {
+    padding: 5%;
+    margin-left: 75px;
+}
+img {
+    margin: 3%;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 50pt;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(201, 152, 30);
+}
