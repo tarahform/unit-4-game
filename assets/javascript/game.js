@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
 
 
-    function getCrystalHandler(crystalKey) {
+    function getCrystal(crystalKey) {
         return function () {
             userTotal = userTotal + crystalValues[crystalKey];
             console.log("New userTotal " + userTotal);
