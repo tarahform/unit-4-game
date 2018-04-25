@@ -1,0 +1,41 @@
+#crystalscol {
+    padding: 5%;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 60pt;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: blue;
+    font-size: 30pt;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    color:green;
+    font-size: 20pt;
+}
+.btn {
+    background-color: Transparent;
+}
+body {
+    background-image: url("../images/crystall-grey.jpg");
+}
+.jumbotron {
+    opacity: .60;
+}
+#directions {
+    margin-bottom: 20px;
+}
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
